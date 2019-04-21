@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>showAnnonce</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card class="welcome-card" >
+    <ion-card-header>
+      <ion-card-subtitle>{{annonce.date}}</ion-card-subtitle>
+      <ion-card-title>{{ annonce.type }}</ion-card-title>
+    </ion-card-header>
+    <ion-img src="{{annonce.image}}"></ion-img>
+    <ion-card-content>
+      <p>{{ annonce.description }}</p>
+    </ion-card-content>
+  </ion-card>
+
+
+</ion-content>

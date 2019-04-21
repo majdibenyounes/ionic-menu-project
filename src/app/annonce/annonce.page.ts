@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Actualite } from '../models/actualite.model';
-
+import { NavController } from '@ionic/angular';
+import { AnnonceService } from '../services/annonce.service';
+import { ShowAnnoncePage } from '../show-annonce/show-annonce.page';
 @Component({
   selector: 'app-annonce',
   templateUrl: './annonce.page.html',
@@ -14,11 +16,16 @@ export class AnnoncePage implements OnInit {
     new Actualite('3', 'Urgent', 'Rôle de l’Agence en tant qu’opérateur public', './assets/urgent.jpg/'),
     new Actualite('4', 'Evenement', 'Rôle de l’Agence dans le développement du secteur', './assets/evenement.png/'),
     new Actualite('5', 'Evenement', 'Rôle de l’Agence dans le développement du secteur', './assets/evenement.png/')
-  ];
+  ]; 
 
-  constructor() { }
+  constructor(private navCtrl: NavController, annonceService: AnnonceService) { }
 
   ngOnInit() {
   }
+
+
+  /*showAnnonce(id1){
+    this.navCtrl.navigateForward(ShowAnnoncePage, { id: id1 });
+  }*/
 
 }

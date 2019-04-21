@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { NavController } from 'ionic-angular';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouteReuseStrategy } from '@angular/router';
 
@@ -8,16 +9,20 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
-
+import { AnnonceService } from './services/annonce.service';
+import {AnnoncePageModule} from './annonce/annonce.module';
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [
+    AppComponent],
   entryComponents: [],
   imports: [
+    AnnoncePageModule,
     BrowserModule,
     IonicModule.forRoot(),
     AppRoutingModule
   ],
   providers: [
+    AnnonceService,
     StatusBar,
     SplashScreen,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
