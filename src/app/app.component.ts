@@ -21,9 +21,9 @@ export class AppComponent {
       icon: 'person'
     },
     {
-      title: 'Agenda',
+      title: 'Déconnexion',
       url: '/list',
-      icon: 'calendar'
+      icon: 'exit'
     },
   ];
 
