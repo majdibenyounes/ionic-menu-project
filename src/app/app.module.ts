@@ -11,6 +11,8 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AnnonceService } from './services/annonce.service';
 import {AnnoncePageModule} from './annonce/annonce.module';
+import {FormPageModule} from './form/form.module';
+
 @NgModule({
   declarations: [
     AppComponent],

@@ -22,7 +22,7 @@ export class AppComponent {
     },
     {
       title: 'Déconnexion',
-      url: '/list',
+      url: '/form',
       icon: 'exit'
     },
   ];

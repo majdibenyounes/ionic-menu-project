@@ -19,8 +19,18 @@ const routes: Routes = [
     path: 'annonce',
     loadChildren: './annonce/annonce.module#AnnoncePageModule'
   },
-  { path: 'show-annonce/:id',
-   loadChildren: './show-annonce/show-annonce.module#ShowAnnoncePageModule' }
+  {
+    path: 'show-annonce/:id',
+    loadChildren: './show-annonce/show-annonce.module#ShowAnnoncePageModule'
+  },
+  {
+    path: 'form',
+    loadChildren: './form/form.module#FormPageModule'
+  },
+  {
+    path: 'login',
+    loadChildren: './login/login.module#LoginPageModule' 
+  },
 ];
 
 @NgModule({
