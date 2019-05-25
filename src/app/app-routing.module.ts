@@ -31,6 +31,11 @@ const routes: Routes = [
     path: 'login',
     loadChildren: './login/login.module#LoginPageModule' 
   },
+  { path: 'reclamation', 
+  loadChildren: './reclamation/reclamation.module#ReclamationPageModule' },
+  
+  { path: 'demande',
+   loadChildren: './demande/demande.module#DemandePageModule' },
 ];
 
 @NgModule({

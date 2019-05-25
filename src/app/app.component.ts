@@ -21,6 +21,16 @@ export class AppComponent {
       icon: 'person'
     },
     {
+      title: 'Demande de congé',
+      url: '/demande',
+      icon: 'today'
+    },
+    {
+      title: 'Reclamation',
+      url: '/reclamation',
+      icon: 'paper'
+    },
+    {
       title: 'Déconnexion',
       url: '/form',
       icon: 'exit'

@@ -1,5 +1,4 @@
 import { NgModule } from '@angular/core';
-import { NavController } from 'ionic-angular';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouteReuseStrategy } from '@angular/router';
 
@@ -12,7 +11,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AnnonceService } from './services/annonce.service';
 import {AnnoncePageModule} from './annonce/annonce.module';
 import {FormPageModule} from './form/form.module';
-
+import { ImagePicker } from '@ionic-native/image-picker/ngx';
 @NgModule({
   declarations: [
     AppComponent],
@@ -27,7 +26,8 @@ import {FormPageModule} from './form/form.module';
     AnnonceService,
     StatusBar,
     SplashScreen,
-    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
+    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
+    ImagePicker
   ],
   bootstrap: [AppComponent]
 })
